@@ -1,0 +1,39 @@
+﻿<Window x:Class="BiuroTurystyczne.Tokio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiuroTurystyczne"
+        mc:Ignorable="d"
+        Title="Tokio" Height="450" Width="800"  Background="#272537">
+    <Grid>
+
+        <TextBlock x:Name="plik3"  FontSize="15" Foreground="Aqua" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="186" Width="420" Margin="361,62,0,0" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.245"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.953"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Image Source="https://www.euractiv.pl/wp-content/uploads/sites/6/2021/07/photo-1540959733332-eab4deabeeaf-771x450.jpg" Margin="10,10,454,207" >
+        </Image>
+
+        <Image Source="https://ocdn.eu/pulscms-transforms/1/Fgnk9kpTURBXy81YjY2NzJmN2U1Y2FkMzhiZjNhNjk0MmExMmY5NTRlZi5qcGeUlQMAcs0D6M0CMpMFzQMUzQG8lQfZMi9wdWxzY21zL01EQV8vMjMzN2M5ZmQ2YjkzMWVlNmNiMGQyM2RjYmEyNThhOWQucG5nAMIAkwmmODQ2OWFkBoGhMAU/9-powodow-by-leciec-do-tokio.webp" Margin="10,212,454,10" RenderTransformOrigin="0.624,0.495">
+        </Image>
+
+        <Button Content="Powrót" FontSize="23" Background="#272537" Foreground="Aqua" HorizontalAlignment="Left" Height="40" Margin="682,356,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <Label Content="TOKIO" FontSize="40" HorizontalAlignment="Left" Height="56" Margin="500,0,0,0" VerticalAlignment="Top" Width="150">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Aqua" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+
+        </Label>
+        <Button Name="OFERTATOKIO" Content="NASZA OFERTA"  Foreground="Aqua" Background="#272537" HorizontalAlignment="Left" Height="84" Margin="367,258,0,0" VerticalAlignment="Top" Width="415" FontSize="48" FontFamily="Impact" Click="OFERTATOKIO_Click"/>
+    </Grid>
+</Window>

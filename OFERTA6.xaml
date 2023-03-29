@@ -1,0 +1,16 @@
+﻿<Window x:Class="BiuroTurystyczne.OFERTA6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiuroTurystyczne"
+        mc:Ignorable="d"
+        Title="OFERTA6" Height="450" Width="800" Background="#272537">
+    <Grid>
+        <TextBox Name="tb_Name" HorizontalAlignment="Left" Height="37" Margin="79,50,0,0" TextWrapping="Wrap" Text="Proszę pisać imie: " VerticalAlignment="Top" Width="640"/>
+        <TextBox Name="tb_SurName" HorizontalAlignment="Left" Height="37" Margin="79,115,0,0" TextWrapping="Wrap" Text="Proszę wpisać nazwisko:" VerticalAlignment="Top" Width="640"/>
+        <TextBox Name="tb_NrTelefonu" HorizontalAlignment="Left" Height="42" Margin="79,184,0,0" TextWrapping="Wrap" Text="Proszę wpisać numer telefonu: " VerticalAlignment="Top" Width="640"/>
+        <TextBox Name="tb_AdresEmail" HorizontalAlignment="Left" Height="42" Margin="79,261,0,0" TextWrapping="Wrap" Text="Proszę wpisać adres email: " VerticalAlignment="Top" Width="640"/>
+        <Button Name="Button1" Content="Zapisz" HorizontalAlignment="Left" Height="58" Margin="79,351,0,0" VerticalAlignment="Top" Width="640" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="BiuroTurystyczne.OFERTA3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiuroTurystyczne"
+        mc:Ignorable="d"
+        Title="OFERTA3" Height="450" Width="862.409" Background="#272537">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="395*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="OFERTA DLA RODZINY" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="58,10,0,0" VerticalAlignment="Top" Width="289" FontSize="22" FontFamily="Arial Black">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="Orange" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="OFERTA DLA STUDENTÓW" HorizontalAlignment="Left" Height="41" Margin="30,10,0,0" VerticalAlignment="Top" Width="339" FontSize="22" FontFamily="Arial Black">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="Orange" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="65,49,0,0" TextWrapping="Wrap" Text="Oferta dla osób w wieku 18-26 lat" VerticalAlignment="Top" Width="275" FontSize="16" Foreground="#FFEAE6E2"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="10,51,-5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="377" FontSize="14" Foreground="#FFF1ECE7"><Run Text="OFERTA DLA 2 DOROSŁYCH I JEDNEGO LUB DWÓJKI DZIECI"/></TextBlock>
+        <Label Content="LOTNISKO WYLOTOWE: WARSZAWA NIEMODLIN " HorizontalAlignment="Left" Height="40" Margin="3,81,0,0" VerticalAlignment="Top" Width="407" RenderTransformOrigin="0.5,0.5" Foreground="#FFECDEDE" FontSize="18">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.449"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="LOTNISKO WYLOTOWE: WARSZAWA" Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10,81,0,0" VerticalAlignment="Top" Width="372" Foreground="#FFF3E1E1" FontSize="18"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Background="#272537" Height="78" Margin="10,129,0,0" TextWrapping="Wrap" Text="CENA BILETU SAMOLOTOWEGO: 3546 ZA OSOBĘ DOROSŁĄ, DZIECI DO LAT TRZECH LECĄ ZA DARMO" VerticalAlignment="Top" Width="372" TextChanged="TextBox_TextChanged" Foreground="#FFF3EAEA" FontSize="18"/>
+        <Button Name="OFERTA1"  Content="OFERTA1" Foreground="OrangeRed" Background="Orange" HorizontalAlignment="Left" Height="67" Margin="65,321,0,0" VerticalAlignment="Top" Width="275" Click="OFERTA1_Click" FontSize="48"/>
+        <Button Name="OFERTA2" Content="OFERTA2" Foreground="OrangeRed" Background="Orange" Grid.Column="1" HorizontalAlignment="Left" Height="72" Margin="76,321,0,0" VerticalAlignment="Top" Width="271" Click="OFERTA2_Click" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Height="72" Foreground="White" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" FontSize="18"><Run Text="NAZWA HOTELU: Le Regent Montmarte , CENA ZA NOC: 646 ZŁ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Height="51" Margin="1,129,0,0" TextWrapping="Wrap" Text="CENA BILETU SAMOLOTOWEGO: 2654 ZA OSOBĘ" VerticalAlignment="Top" Width="399" FontSize="18" RenderTransformOrigin="0.399,0.19"/>
+        <TextBlock Grid.Column="1" Foreground="White" HorizontalAlignment="Left" Height="69" Margin="10,243,-5,0" TextWrapping="Wrap" Text="NAZWA HOTELU: Hotel Georgette, CENA ZA NOC: 918 ZŁ " VerticalAlignment="Top" Width="377" FontSize="18"/>
+
+    </Grid>
+</Window>
